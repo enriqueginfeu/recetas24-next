@@ -1,0 +1,88 @@
+.receta {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.recetaURL {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 120rem;
+}
+
+@media (min-width: 768px) {
+    .recetaURL {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contenidoURL {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 0rem;
+}
+
+.contenido {
+    padding: 1rem;
+}
+
+.contenido h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.contenido p {
+    text-align: center;
+}
+
+.descripcion {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.8rem;
+    
+}
+
+.enlace {
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.enlace:hover {
+    background-color: var(--primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
